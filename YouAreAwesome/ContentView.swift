@@ -12,11 +12,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             VStack {
+                HStack{
+                    Image(systemName: "swift")
                 Text(messageString)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .foregroundColor(.red)
                 //                .background(.yellow)
+                }
                 HStack {
                     Button("Awesome!", action: {
                         messageString="You Are Awesome!"
