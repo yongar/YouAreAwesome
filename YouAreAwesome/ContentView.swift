@@ -1,4 +1,4 @@
-//
+ //
 //  ContentView.swift
 //  YouAreAwesome
 //
@@ -8,12 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var messageString = " "
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            VStack {
+                Text(messageString)
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.red)
+                //                .background(.yellow)
+                HStack {
+                    Button("Awesome!", action: {
+                        messageString="You Are Awesome!"
+                    })
+                    .buttonStyle(.borderedProminent)
+                    Button("Great!" ) {
+                        // this is the action performed when the button is pressed
+                        messageString = "You are Great!"
+                        
+                    }
+                    .buttonStyle(.borderedProminent)
+                }
+                
+            }
         }
         .padding()
     }
