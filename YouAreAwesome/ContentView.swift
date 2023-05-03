@@ -13,11 +13,16 @@ struct ContentView: View {
         VStack {
             VStack {
                 HStack{
+                    Image(systemName: "2.circle")
+                        .resizable()
+                        .scaledToFit()
+                    
                     Image(systemName: "swift")
+                    
                 Text(messageString)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                    .foregroundColor(.red)
+                   
                 //                .background(.yellow)
                 }
                 HStack {
@@ -32,8 +37,10 @@ struct ContentView: View {
                     }
                     .buttonStyle(.borderedProminent)
                 }
+                Rectangle()
+                    
                 
-            }
+            }.foregroundColor(.gray)
         }
         .padding()
     }
