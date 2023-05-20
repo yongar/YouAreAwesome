@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		CC6265022A00B3AF006EF64D /* YouAreAwesomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6265012A00B3AF006EF64D /* YouAreAwesomeApp.swift */; };
-		CC6265042A00B3AF006EF64D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6265032A00B3AF006EF64D /* ContentView.swift */; };
 		CC6265062A00B3B0006EF64D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6265052A00B3B0006EF64D /* Assets.xcassets */; };
 		CC6265092A00B3B0006EF64D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6265082A00B3B0006EF64D /* Preview Assets.xcassets */; };
+		CCC0C08F2A0733920086F447 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0C08E2A0733920086F447 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC6264FE2A00B3AF006EF64D /* YouAreAwesome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouAreAwesome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6265012A00B3AF006EF64D /* YouAreAwesomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouAreAwesomeApp.swift; sourceTree = "<group>"; };
-		CC6265032A00B3AF006EF64D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC6265052A00B3B0006EF64D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC6265082A00B3B0006EF64D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC7B49C62A18316000B24DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CCC0C08E2A0733920086F447 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = YouAreAwesome/ContentView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +52,9 @@
 		CC6265002A00B3AF006EF64D /* YouAreAwesome */ = {
 			isa = PBXGroup;
 			children = (
+				CC7B49C62A18316000B24DB6 /* Info.plist */,
 				CC6265012A00B3AF006EF64D /* YouAreAwesomeApp.swift */,
-				CC6265032A00B3AF006EF64D /* ContentView.swift */,
+				CCC0C08E2A0733920086F447 /* ContentView.swift */,
 				CC6265052A00B3B0006EF64D /* Assets.xcassets */,
 				CC6265072A00B3B0006EF64D /* Preview Content */,
 			);
@@ -137,8 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6265042A00B3AF006EF64D /* ContentView.swift in Sources */,
 				CC6265022A00B3AF006EF64D /* YouAreAwesomeApp.swift in Sources */,
+				CCC0C08F2A0733920086F447 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,17 +266,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YouAreAwesome/Preview Content\"";
 				DEVELOPMENT_TEAM = MGM29TNV68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YouAreAwesome/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Awesome;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,17 +298,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YouAreAwesome/Preview Content\"";
 				DEVELOPMENT_TEAM = MGM29TNV68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YouAreAwesome/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Awesome;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
